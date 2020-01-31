@@ -11,6 +11,9 @@ namespace Actio.HelpDeskApi.Enums
         demonstracao,
         homologacao,
         parceiro,
-        piloto
+        piloto,
+        consultor,
+        interno,
+        producao
     }
 }

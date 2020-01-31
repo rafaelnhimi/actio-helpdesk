@@ -15,6 +15,7 @@ class NormalLoginForm extends React.Component {
         
         /*console.log('Received values of form: ', values);
         this.props.history.push(DEMO.home2);*/
+       // console.log(this.props.form.getFieldValue("login2-username"));
         
         this.handleClick(); 
       }
@@ -24,7 +25,8 @@ class NormalLoginForm extends React.Component {
   async handleClick() {
     console.log("TESTE")
     let response = await api.post('/Usuario/autenticar', {
-        username: 'rafa'
+        login: this.props.form.getFieldValue("login"),
+        senha: this.props.form.getFieldValue("senha"),
     })
   } 
 
@@ -41,15 +43,15 @@ class NormalLoginForm extends React.Component {
         <div className="divider divider-with-content my-4"><span className="divider-inner-content">OR</span></div>
         <Form onSubmit={this.handleSubmit} className="form-v1">
           <FormItem>
-            {getFieldDecorator('login2-username', {
-              rules: [{ required: true, message: 'Please input your username!' }],
+            {getFieldDecorator('login', {
+              rules: [{ required: true, message: 'Please input your username!'}],
             })(
               <Input size="large" prefix={<Icon type="user" style={{ fontSize: 13 }} />} placeholder="Username" />
             )}
           </FormItem>
           <FormItem>
-            {getFieldDecorator('login2-password', {
-              rules: [{ required: true, message: 'Please input your Password!' }],
+            {getFieldDecorator('senha', {
+              rules: [{ required: true, message: 'Please input your Password!', }],
             })(
               <Input size="large" prefix={<Icon type="lock" style={{ fontSize: 13 }} />} type="password" placeholder="Password" />
             )}

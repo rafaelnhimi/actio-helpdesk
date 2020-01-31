@@ -11,6 +11,7 @@ import HeaderContentFooter from './HeaderContentFooter'
 class AppLayout extends React.Component {
 
   updateLayout(layout, boxedLayout, fixedSidenav, fixedHeader) {
+    console.log(layout)
     switch(layout) {
       case '1':
         return <App boxedLayout={boxedLayout} fixedSidenav={fixedSidenav} fixedHeader={fixedHeader} />;

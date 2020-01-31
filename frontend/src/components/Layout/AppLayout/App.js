@@ -10,6 +10,8 @@ import AppSidenav from 'components/Layout/Sidenav';
 class AppLayout extends React.Component {
   render() {
     const { boxedLayout, fixedSidenav, fixedHeader } = this.props;
+    console.log(fixedHeader);
+    
 
     return (
       <Layout id='app-layout' className={classnames('app-layout', {

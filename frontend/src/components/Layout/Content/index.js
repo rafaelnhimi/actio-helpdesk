@@ -6,6 +6,17 @@ import LoadingComponent from 'components/Loading';
 import { Layout } from 'antd';
 const { Content } = Layout;
 
+let AsyncDashboard = loadable({
+  loader: () => import('routes/dashboard/'),
+  loading: LoadingComponent
+})
+let AsyncCadastro = loadable({
+  loader: () => import('routes/cadastro/'),
+  loading: LoadingComponent
+})
+
+
+//Manter daqui pra baixo só de exemplo
 let AsyncCalendar = loadable({
   loader: () => import('routes/calendar/'),
   loading: LoadingComponent
@@ -16,10 +27,6 @@ let AsyncCard = loadable({
 })
 let AsyncChart = loadable({
   loader: () => import('routes/chart/'),
-  loading: LoadingComponent
-})
-let AsyncDashboard = loadable({
-  loader: () => import('routes/dashboard/'),
   loading: LoadingComponent
 })
 let AsyncECommerce = loadable({
@@ -68,6 +75,9 @@ class AppContent extends React.Component {
     return (
       <Content id='app-content'>
         <Route path={`${match.url}/dashboard`} component={AsyncDashboard} />
+        <Route path={`${match.url}/cadastro`} component={AsyncCadastro} />
+
+
         <Route path={`${match.url}/calendar`} component={AsyncCalendar} />
         <Route path={`${match.url}/card`} component={AsyncCard}/>
         <Route path={`${match.url}/chart`} component={AsyncChart} />

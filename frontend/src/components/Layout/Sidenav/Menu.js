@@ -5,7 +5,7 @@ import { Menu, Icon } from 'antd';
 import APPCONFIG from 'constants/appConfig';
 import DEMO from 'constants/demoData';
 import { toggleOffCanvasMobileNav } from 'actions/settingsActions';
-import { CARDS, LAYOUTS, UIKIT, FORMS, FEEDBACKS, TABELS, CHARTS, PAGES, ECOMMERCE, USER, EXCEPTION } from 'constants/uiComponents';
+import { CADASTROS, CARDS, LAYOUTS, UIKIT, FORMS, FEEDBACKS, TABELS, CHARTS, PAGES, ECOMMERCE, USER, EXCEPTION } from 'constants/uiComponents';
 
 const SubMenu = Menu.SubMenu;
 
@@ -18,6 +18,7 @@ class AppMenu extends React.Component {
     '/app/calendar',
   ]
   rootSubmenuKeys = [
+    '/app/cadastro',
     '/app/card',
     '/app/layout',
     '/app/ui',
@@ -141,6 +142,12 @@ class AppMenu extends React.Component {
             <span className="nav-badge badge-right badge badge-pill badge-info ml-1">100+</span>
           </a>
         </Menu.Item>
+        <SubMenu
+          key="/app/cadastro"
+          title={<span><Icon type="form" /><span className="nav-text">Cadastros</span></span>}
+        >
+          { this.getNavMenuItems(CADASTROS) }
+        </SubMenu>
         <SubMenu
           key="/app/card"
           title={<span><Icon type="credit-card" /><span className="nav-text">Cards</span></span>}

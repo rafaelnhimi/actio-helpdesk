@@ -1,6 +1,27 @@
 // optional `menuName` overrides default name for menu item if it's defined
 // hideInMenu hides item in menu
 
+export const CADASTROS = [
+  {
+    name: 'Usuario',
+    menuName: 'Usuários',
+    desc: 'Cadastro de usuários',
+    path: '/app/cadastro/usuario'
+  },
+  {
+    name: 'Cliente',
+    menuName: 'Clientes',
+    desc: 'Cadastro de clientes',
+    path: '/app/cadastro/cliente'
+  },
+  {
+    name: 'Produto',
+    menuName: 'Produtos',
+    desc: 'Cadastro de produtos',
+    path: '/app/cadastro/produto'
+  }
+]
+
 export const CARDS = [
   {
     name: 'Card - Image Cards',
@@ -727,6 +748,7 @@ export const EXCEPTION = [
 
 // for UI Overview page
 const COMPONENTS = [
+  ...CADASTROS,
   ...CARDS,
   ...LAYOUTS,
   ...UIKIT, ...UIHOVER, ...UIICON, ...UIMORE, ...UINAVIGATION, ...UITIMELINE, ...UITYPOGRAPHY, ...UIUTILITY,

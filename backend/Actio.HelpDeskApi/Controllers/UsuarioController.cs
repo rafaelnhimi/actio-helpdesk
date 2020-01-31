@@ -20,7 +20,7 @@ namespace Actio.HelpDeskApi.Controllers
         [HttpPost("autenticar")]
         public async Task<ActionResult> Autenticar(LoginModel model)
         {
-            var resposta = await _usuarioService.AutenticarUsuario(model.UserName);
+            var resposta = await _usuarioService.AutenticarUsuario(model.Login);
 
             return Ok(resposta);
         }
