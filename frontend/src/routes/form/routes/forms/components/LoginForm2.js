@@ -36,11 +36,6 @@ class NormalLoginForm extends React.Component {
       <section className="form-v1-container">
         <h2>HelpDesk Actio</h2>
         <p className="lead">Bem-vindo de volta, entre com sua conta {APPCONFIG.brand}</p>
-
-        <a href={DEMO.link} className="btn btn-block icon-btn-v2 bg-facebook mb-2"><Icon type="facebook" theme="filled" /><span className="btn-text">Login with Facebook</span></a>
-        <a href={DEMO.link} className="btn btn-block icon-btn-v2 bg-twitter"><Icon type="twitter" /><span className="btn-text">Login with Twitter</span></a>
-
-        <div className="divider divider-with-content my-4"><span className="divider-inner-content">OR</span></div>
         <Form onSubmit={this.handleSubmit} className="form-v1">
           <FormItem>
             {getFieldDecorator('login', {

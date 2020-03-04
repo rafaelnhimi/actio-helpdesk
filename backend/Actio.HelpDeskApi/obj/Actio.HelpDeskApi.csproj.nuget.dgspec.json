@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj": {}
+    "C:\\Projetos Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj": {
+    "C:\\Projetos Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj",
+        "projectUniqueName": "C:\\Projetos Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj",
         "projectName": "Actio.HelpDeskApi",
-        "projectPath": "D:\\Projetos\\Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj",
-        "packagesPath": "C:\\Users\\Stratec\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\obj\\",
+        "projectPath": "C:\\Projetos Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\Actio.HelpDeskApi.csproj",
+        "packagesPath": "C:\\Users\\Luan Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos Stratec\\HelpDesk\\actio-helpdesk\\backend\\Actio.HelpDeskApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stratec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luan Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
