@@ -1,6 +1,7 @@
 import React from 'react';
 import List from '../../../../components/List';
 import DEMO from 'constants/demoData';
+import EditForm from './edit';
 
 const columns = [{
     title: 'Nome',
@@ -35,6 +36,7 @@ const Page = () => {
         //
         <div> 
             <List 
+                editComponent = {EditForm}
                 titulo="Usuários"
                 columns={columns}/>
         </div>       
